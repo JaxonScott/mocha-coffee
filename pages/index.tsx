@@ -1,16 +1,13 @@
 import CTAButton from "../components/CTAButton";
-import Navbar from "../components/Navbar";
-import Link from "next/link";
-import { AiOutlineArrowRight } from "react-icons/ai";
-import Image from "next/image";
 import ProductItem from "../components/ProductItem";
 import MotionWrapper from "../components/MotionWrapper";
+import Link from "next/link";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 export default function Home() {
   return (
-    <div className="h-3/4">
-      <Navbar />
-      <MotionWrapper>
+    <MotionWrapper>
+      <div className="h-3/4">
         <div className="mt-20"></div>
         <div className="flex gap-8">
           <div className="w-1/2 h-3/4">
@@ -28,7 +25,7 @@ export default function Home() {
               <CTAButton>Browse our products</CTAButton>
               <Link
                 href={"/store"}
-                className="pt-3 font-light text-lg flex gap-2"
+                className="pt-3 font-light text-lg flex gap-2 hover:text-texthover"
               >
                 View Spring Flavours{" "}
                 <span className="pt-1.5">
@@ -67,7 +64,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </MotionWrapper>
-    </div>
+      </div>
+    </MotionWrapper>
   );
 }
