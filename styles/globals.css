@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 body {
-  @apply bg-background mx-24 lg:mx-48 text-lighttext;
-  
+  @apply bg-background  lg:mx-auto text-lighttext lg:w-3/4;
+  overscroll-behavior: none;
 }
