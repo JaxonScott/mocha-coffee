@@ -11,7 +11,7 @@ export default function Home() {
         <div className="mt-5 md:mt-20 "></div>
         <div className=" md:flex  gap-8">
           <div className="w-full md:w-1/2 h-3/4">
-            <h1 className="text-6xl">
+            <h1 className="text-5xl md:text-6xl">
               Quality Caffeine <br /> Without the price tag
             </h1>
             <p className="mt-6 leading-6 md:leading-loose text-md ">
