@@ -9,7 +9,7 @@ export default function SingleProductPage() {
   return (
     <MotionWrapper>
       <div className="mt-20"></div>
-      <div className="flex h-3/4">
+      <div className="flex h-1/2 ">
         <div className="flex flex-col w-1/2">
           <h1 className="text-5xl">House Roast</h1>
           <div className="flex gap-4 mt-1">
@@ -60,6 +60,17 @@ export default function SingleProductPage() {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.{" "}
             </p>
+          </div>
+        </div>
+        <div className="w-1/3 lg:w-1/3 2xl:w-1/3 ml-auto relative">
+          <div className="h-1/2">
+            <Image
+              src={product2}
+              className="rounded-md"
+              layout="contain"
+              objectFit="cover "
+              alt="product image"
+            />
           </div>
         </div>
       </div>
