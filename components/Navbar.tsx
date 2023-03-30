@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { useEffect } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Navbar() {
   const [currentPath, setCurrentPath] = useState("");
@@ -19,7 +20,7 @@ export default function Navbar() {
       <Link href="/">
         <Image src={logo} className="w-40 " alt="logo" />
       </Link>
-      <div>
+      <div className="hidden md:flex">
         <ul className="text-lighttext flex gap-4 pt-3">
           <Link href="/">
             <NavItem>
@@ -48,16 +49,19 @@ export default function Navbar() {
               "CONTACT"
             )}
           </NavItem>
-          <NavItem>
-            {" "}
-            {currentPath === "cart" ? (
-              <span className="text-secondary">CART</span>
-            ) : (
-              "CART"
-            )}
-          </NavItem>
+          <Link href="/cart">
+            <NavItem>
+              {" "}
+              {currentPath === "cart" ? (
+                <span className="text-secondary">CART</span>
+              ) : (
+                "CART"
+              )}
+            </NavItem>
+          </Link>
         </ul>
       </div>
+        <div className="my-auto md:hidden text-3xl"><GiHamburgerMenu /></div>
     </div>
   );
 }
