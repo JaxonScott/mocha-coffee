@@ -4,6 +4,7 @@ import { AiOutlineStar } from "react-icons/ai";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import product2 from "public/images/product2.jpeg";
+import { useRouter } from "next/router";
 
 export default function SingleProductPage() {
   return (

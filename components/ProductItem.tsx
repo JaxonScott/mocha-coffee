@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function ProductItem() {
   return (
     <Link href="/store/1">
-      <div className="relative h-full w-full rounded-md">
+      <div className=" h-full w-full rounded-md">
         <Image
           src={product1}
           className="rounded-md"

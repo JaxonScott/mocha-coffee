@@ -45,18 +45,18 @@ export default function Home() {
             </div>
           </div>
           <div className="w-1/2 flex gap-4">
-            <div className="w-full h-full ">
+            <div className="w-full h-full relative">
               <div className="h-full w-full">
                 <ProductItem />
               </div>
             </div>
             <div className="w-full flex flex-col gap-4">
-              <div className="w-full h-full flex ">
+              <div className="w-full h-full flex relative">
                 <div className="h-full w-full">
                   <ProductItem />
                 </div>
               </div>
-              <div className="w-full h-full flex ">
+              <div className="w-full h-full flex relative">
                 <div className="h-full w-full">
                   <ProductItem />
                 </div>

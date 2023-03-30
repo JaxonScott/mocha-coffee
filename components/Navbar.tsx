@@ -2,8 +2,18 @@ import Image from "next/image";
 import logo from "public/images/ logo.png";
 import NavItem from "./NavItem";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export default function Navbar() {
+  const [currentPath, setCurrentPath] = useState("");
+  const { asPath } = useRouter();
+  useEffect(() => {
+    const path = asPath.split("/")[1];
+    setCurrentPath(path);
+  }, [asPath]);
+
   return (
     <div className="w-full bg-red-200 py-12 flex justify-between">
       <Link href="/">
@@ -11,12 +21,41 @@ export default function Navbar() {
       </Link>
       <div>
         <ul className="text-lighttext flex gap-4 pt-3">
+          <Link href="/">
+            <NavItem>
+              {currentPath === "" ? (
+                <span className="text-secondary">HOME</span>
+              ) : (
+                "HOME"
+              )}
+            </NavItem>
+          </Link>
+          <Link href="/store">
+            <NavItem>
+              {" "}
+              {currentPath === "store" ? (
+                <span className="text-secondary">STORE</span>
+              ) : (
+                "STORE"
+              )}
+            </NavItem>
+          </Link>
           <NavItem>
-            <span className="text-secondary">HOME</span>
+            {" "}
+            {currentPath === "contact" ? (
+              <span className="text-secondary">CONTACT</span>
+            ) : (
+              "CONTACT"
+            )}
           </NavItem>
-          <NavItem>STORE</NavItem>
-          <NavItem>CONTACT</NavItem>
-          <NavItem>CART</NavItem>
+          <NavItem>
+            {" "}
+            {currentPath === "cart" ? (
+              <span className="text-secondary">CART</span>
+            ) : (
+              "CART"
+            )}
+          </NavItem>
         </ul>
       </div>
     </div>
