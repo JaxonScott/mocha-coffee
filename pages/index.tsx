@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <MotionWrapper>
       <div className="h-3/4">
-        <div className="mt-5 md:mt-20 "></div>
+        <div className="mt-16 md:mt-20 "></div>
         <div className=" md:flex  gap-8">
           <div className="w-full md:w-1/2 h-3/4">
             <h1 className="text-5xl md:text-6xl">

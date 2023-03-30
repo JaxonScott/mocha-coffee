@@ -18,7 +18,6 @@ export default function StorePage() {
               <ProductItem />
             </div>
           </div>
-        
         </div>
       </div>
     </MotionWrapper>
