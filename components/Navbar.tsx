@@ -3,10 +3,10 @@ import logo from "public/images/ logo.png";
 import NavItem from "./NavItem";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import { useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Menu, Transition } from "@headlessui/react";
+import { Transition } from "@headlessui/react";
 import { clsx } from "clsx";
 
 export default function Navbar() {
@@ -75,7 +75,6 @@ export default function Navbar() {
       <div className={clsx({ ["hidden"]: !isOpen, ["relative"]: isOpen })}>
         <div className="absolute bg-background w-full py-10 rounded-b-md">
           <Transition
-            // as={Fragment}
             show={isOpen}
             enter="transition ease-out duration-400"
             enterFrom="transform opacity-0 scale-95"
