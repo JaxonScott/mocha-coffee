@@ -21,6 +21,7 @@ export default function StorePage() {
               src={product3}
               layout="fill"
               objectFit="cover"
+              placeholder="blur"
             />
             <div className="absolute  flex bottom-0 px-4 bg-background bg-opacity-95 gap-2 w-full py-8">
               <div>
@@ -40,6 +41,7 @@ export default function StorePage() {
               src={product3}
               layout="fill"
               objectFit="cover"
+              placeholder="blur"
             />
             <div className="absolute  flex bottom-0 px-4 bg-background bg-opacity-95 gap-2 w-full py-8">
               <div>

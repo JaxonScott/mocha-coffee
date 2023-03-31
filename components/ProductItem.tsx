@@ -12,6 +12,7 @@ export default function ProductItem({ img }: { img: StaticImageData }) {
           layout="fill"
           objectFit="cover"
           alt="product image"
+          placeholder="blur"
         />
         <div className="absolute bottom-0 justify-between w-full bg-background bg-opacity-95 flex p-4">
           <div>

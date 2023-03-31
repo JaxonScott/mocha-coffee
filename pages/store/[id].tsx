@@ -66,6 +66,7 @@ export default function SingleProductPage() {
         <div className="w-full mb-5 md:mb-0  -order-1  md:ml-auto md:order-last md:w-1/3 lg:w-1/3 2xl:w-1/3  relative">
           <div className="h-1/2">
             <Image
+              placeholder="blur"
               src={product2}
               className="rounded-md"
               layout="contain"
