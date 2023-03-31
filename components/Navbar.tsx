@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <>
       <div className="w-full  pt-8 flex justify-between">
-        <Link href="/">
+        <Link href="/" onClick={() => setIsOpen(false)}>
           <Image src={logo} className="w-40 " alt="logo" />
         </Link>
         <div className="hidden md:flex">

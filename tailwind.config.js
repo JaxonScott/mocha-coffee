@@ -13,6 +13,7 @@ module.exports = {
       background: "#151515",
       lighttext: "#D9D9D9",
       texthover: "#A8A8A8",
+      backgroundlight: "303030",
     },
     extend: {},
   },

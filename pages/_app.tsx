@@ -11,9 +11,12 @@ const poppins = Poppins({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={poppins.className}>
+      <div>
+
       <Layout>
         <Component {...pageProps} />
       </Layout>
+      </div>
     </main>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import MotionWrapper from "../../components/MotionWrapper";
-import ProductItem from "../../components/ProductItem";
+import product2 from "public/images/product2.jpeg";
+import Image from "next/image";
 
 export default function StorePage() {
   return (
@@ -12,12 +13,64 @@ export default function StorePage() {
         <div className="mb-4">
           <p className="font-light text-texthover">8 products</p>
         </div>
-        <div className="flex flex-col w-full gap-10">
-          <div className="w-1/4 h-1/4 flex absolute ">
-            <div className="h-full w-full">
-              <ProductItem />
+        <div className="flex gap-4">
+          <div className=" w-1/4 py-32 relative ">
+            <Image
+              className="rounded-md"
+              alt="product img"
+              src={product2}
+              layout="fill"
+              objectFit="cover"
+            />
+            <div className="absolute  flex bottom-0 px-4 bg-background bg-opacity-95 gap-2 w-full py-8">
+              <div>
+                <h1 className="text-lg font-semibold">House Specail</h1>
+                <p className="text-sm font-light">Our house Specail beans</p>
+              </div>
+              <div className="my-auto">
+                <h1 className="text-xl">$44</h1>
+              </div>
+            </div>
+            <div></div>
+          </div>
+          <div className=" w-1/4 py-32 relative ">
+            <Image
+              className="rounded-md"
+              alt="product img"
+              src={product2}
+              layout="fill"
+              objectFit="cover"
+            />
+            <div className="absolute  flex bottom-0 px-4 bg-background bg-opacity-95 gap-2 w-full py-8">
+              <div>
+                <h1 className="text-lg font-semibold">House Specail</h1>
+                <p className="text-sm font-light">Our house Specail beans</p>
+              </div>
+              <div className="my-auto">
+                <h1 className="text-xl">$44</h1>
+              </div>
+            </div>
+            <div></div>
+          </div>
+          <div className=" w-1/4 py-32 relative ">
+            <Image
+              className="rounded-md"
+              alt="product img"
+              src={product2}
+              layout="fill"
+              objectFit="cover"
+            />
+            <div className="absolute  flex bottom-0 px-4 bg-background bg-opacity-95 gap-2 w-full py-8">
+              <div>
+                <h1 className="text-lg font-semibold">House Specail</h1>
+                <p className="text-sm font-light">Our house Specail beans</p>
+              </div>
+              <div className="my-auto">
+                <h1 className="text-xl">$44</h1>
+              </div>
             </div>
           </div>
+          <div></div>
         </div>
       </div>
     </MotionWrapper>
