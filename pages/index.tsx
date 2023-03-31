@@ -3,6 +3,9 @@ import ProductItem from "../components/ProductItem";
 import MotionWrapper from "../components/MotionWrapper";
 import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import product1 from "public/images/product1.jpeg";
+import product2 from "public/images/product2.jpeg";
+import product3 from "public/images/product3.jpeg";
 
 export default function Home() {
   return (
@@ -47,18 +50,18 @@ export default function Home() {
           <div className="w-1/2 hidden md:flex  gap-4">
             <div className="w-full h-full relative">
               <div className="h-full w-full">
-                <ProductItem />
+                <ProductItem img={product1} />
               </div>
             </div>
             <div className="w-full flex flex-col gap-4">
               <div className="w-full h-full flex relative">
                 <div className="h-full w-full">
-                  <ProductItem />
+                  <ProductItem img={product2} />
                 </div>
               </div>
               <div className="w-full h-full flex relative">
                 <div className="h-full w-full">
-                  <ProductItem />
+                  <ProductItem img={product3} />
                 </div>
               </div>
             </div>

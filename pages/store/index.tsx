@@ -1,6 +1,6 @@
 import React from "react";
 import MotionWrapper from "../../components/MotionWrapper";
-import product2 from "public/images/product2.jpeg";
+import product3 from "public/images/product3.jpeg";
 import Image from "next/image";
 
 export default function StorePage() {
@@ -18,7 +18,7 @@ export default function StorePage() {
             <Image
               className="rounded-md"
               alt="product img"
-              src={product2}
+              src={product3}
               layout="fill"
               objectFit="cover"
             />
@@ -37,7 +37,7 @@ export default function StorePage() {
             <Image
               className="rounded-md"
               alt="product img"
-              src={product2}
+              src={product3}
               layout="fill"
               objectFit="cover"
             />
