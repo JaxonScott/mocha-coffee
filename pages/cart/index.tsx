@@ -9,16 +9,18 @@ export default function index() {
   const [quantity, setQuantity] = useState(1);
   return (
     <MotionWrapper>
-      <div className="mt-20"></div>
-      <div className="flex gap-20">
-        <div className="w-1/2 flex flex-col">
+      <div className="mt-10 md:mt-20"></div>
+      <div className="flex flex-wrap md:gap-20 ">
+        <div className="w-full  md:w-1/2 flex flex-col flex-wrap md:-order-1">
+        <div className="mt-10 md:mt-0"></div>
           <h1 className="text-lg text-secondary font-semibold">
             Shipping details
           </h1>
           <form className="flex flex-col gap-5">
             <div className="w-1/2 ml-auto ">
               <input
-                className="w-full rounded-md py-3 px-3 text-background outline-none"
+
+                className="hidden md:flex w-full rounded-md py-3 px-3 text-background outline-none"
                 placeholder="123, Fake st"
               />
             </div>
@@ -62,7 +64,7 @@ export default function index() {
             </div>
           </form>
         </div>
-        <div className="w-1/2 md:w-1/3 flex flex-col ml-auto ">
+        <div className=" w-full  md:w-1/3 flex flex-col ml-auto -order-1  ">
           <p className="font-semibold text-end mb-4 text-secondary text-lg">
             Order Summary{" "}
           </p>
@@ -135,6 +137,7 @@ export default function index() {
           </div>
         </div>
       </div>
+      <div className="mb-10 md:mb-0"></div>
     </MotionWrapper>
   );
 }
